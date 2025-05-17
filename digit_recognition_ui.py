@@ -3,7 +3,7 @@ from pygame.locals import *
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.models import load_model
+from keras import load_model
 import cv2
 
 WINDOWSIZEX = 640
@@ -16,7 +16,7 @@ RED = (255, 0, 0)
 
 IMAGESAVE = False
 
-model = load_model("C:/Users/ssidd/Desktop/Guess_the_Digit/model.h5")
+model = load_model("C:/Users/ssidd/OneDrive/Desktop/Projects/Guess_the_Digit/model.h5")
 
 LABELS= {0:"Zero",1:"One",2:"Two",3:"Three",4:"Four",5:"Five",6:"Six",7:"Seven",8:"Eight",9:"Nine"}
 
